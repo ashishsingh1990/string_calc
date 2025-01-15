@@ -1,0 +1,7 @@
+<%= turbo_stream.update "result_section" do %>
+  <% if @result.present? %>
+    <h2>Result: <%= @result %></h2>
+  <% elsif @error.present? %>
+    <h2>Error: <%= @error %></h2>
+  <% end %>
+<% end %>

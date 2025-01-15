@@ -1,0 +1,14 @@
+<h1>String Calculator</h1>
+
+<%= form_with url: add_path, method: :post, local: false, data: { turbo: true } do |form| %>
+  <div>
+    <%= form.label :numbers, "Enter numbers:" %>
+    <%= form.text_field :numbers %>
+  </div>
+  <div>
+    <%= form.submit "Calculate" %>
+  </div>
+<% end %>
+
+<%= turbo_stream_from "result_#{params[:numbers]}" %>
+<div id="result_section"></div>
