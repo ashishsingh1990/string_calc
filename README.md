@@ -18,8 +18,8 @@ This Rails application provides an API endpoint to perform addition on a string 
 
 ### Prerequisites
 
-- Ruby (version 3.1.4)
-- Rails (version 7.0.8)
+- Ruby (version 3.3.0)
+- Rails (version 8.0.1)
 
 ### Installation
 
